@@ -1,2 +1,3 @@
-# mlvl
-Machine Learning Virtual Laboratory
+# The virtual machine learning laboratory with visualization of algorithms execution process
+
+Currently, Computer and Data Science is developing rapidly that as a result there is an increasing need in specialists of this areas. And this in turn means the need to increase the number of educational programs related to this field of knowledge. One way to achieve this goal is to create online virtual machine learning laboratory. Such laboratory will provide a lot of advantages such as availability of learning materials for everyone from everywhere. Visualization of machine learning process, ability to change parameters that affects on algorithms, ability to change the code of software implementation represented in different programming languages and see result instantly makes it easier for User to understand the principles of machine learning algorithms. A lessons painted in simple words allows User to fully learn all the details of each algorithm. Also, the proposed service has an open source structure that provides an opportunity for third-party developers to add their own lessons that have passed the validation.
