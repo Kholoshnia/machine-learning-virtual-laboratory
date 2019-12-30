@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NEAT", "NEAT\NEAT.vcxproj", "{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Debug|x64.ActiveCfg = Debug|x64
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Debug|x64.Build.0 = Debug|x64
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Debug|x86.ActiveCfg = Debug|Win32
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Debug|x86.Build.0 = Debug|Win32
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Release|x64.ActiveCfg = Release|x64
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Release|x64.Build.0 = Release|x64
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Release|x86.ActiveCfg = Release|Win32
+		{43A1F8DA-0B46-4ABB-82DE-45FA194A93C8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {358607CB-9DD9-4D6C-B00B-D1AD1EF23499}
+	EndGlobalSection
+EndGlobal
