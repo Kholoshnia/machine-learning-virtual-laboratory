@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDB3922C23BA6E0300F94B24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDB3922B23BA6E0300F94B24 /* main.cpp */; };
+		DDB3923823BA6E8700F94B24 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB3923323BA6E8600F94B24 /* libsfml-system.2.5.1.dylib */; };
+		DDB3923923BA6E8700F94B24 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB3923423BA6E8600F94B24 /* libsfml-window.2.5.1.dylib */; };
+		DDB3923A23BA6E8700F94B24 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB3923523BA6E8600F94B24 /* libsfml-audio.2.5.1.dylib */; };
+		DDB3923B23BA6E8700F94B24 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB3923623BA6E8600F94B24 /* libsfml-graphics.2.5.1.dylib */; };
+		DDB3923C23BA6E8700F94B24 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB3923723BA6E8600F94B24 /* libsfml-network.2.5.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDB3922623BA6E0300F94B24 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DDB3922823BA6E0300F94B24 /* NEAT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NEAT; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB3922B23BA6E0300F94B24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DDB3923323BA6E8600F94B24 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
+		DDB3923423BA6E8600F94B24 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
+		DDB3923523BA6E8600F94B24 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
+		DDB3923623BA6E8600F94B24 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
+		DDB3923723BA6E8600F94B24 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDB3922523BA6E0300F94B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB3923823BA6E8700F94B24 /* libsfml-system.2.5.1.dylib in Frameworks */,
+				DDB3923923BA6E8700F94B24 /* libsfml-window.2.5.1.dylib in Frameworks */,
+				DDB3923A23BA6E8700F94B24 /* libsfml-audio.2.5.1.dylib in Frameworks */,
+				DDB3923B23BA6E8700F94B24 /* libsfml-graphics.2.5.1.dylib in Frameworks */,
+				DDB3923C23BA6E8700F94B24 /* libsfml-network.2.5.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDB3921F23BA6E0300F94B24 = {
+			isa = PBXGroup;
+			children = (
+				DDB3922A23BA6E0300F94B24 /* NEAT */,
+				DDB3922923BA6E0300F94B24 /* Products */,
+				DDB3923223BA6E8600F94B24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDB3922923BA6E0300F94B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDB3922823BA6E0300F94B24 /* NEAT */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDB3922A23BA6E0300F94B24 /* NEAT */ = {
+			isa = PBXGroup;
+			children = (
+				DDB3922B23BA6E0300F94B24 /* main.cpp */,
+			);
+			path = NEAT;
+			sourceTree = "<group>";
+		};
+		DDB3923223BA6E8600F94B24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDB3923523BA6E8600F94B24 /* libsfml-audio.2.5.1.dylib */,
+				DDB3923623BA6E8600F94B24 /* libsfml-graphics.2.5.1.dylib */,
+				DDB3923723BA6E8600F94B24 /* libsfml-network.2.5.1.dylib */,
+				DDB3923323BA6E8600F94B24 /* libsfml-system.2.5.1.dylib */,
+				DDB3923423BA6E8600F94B24 /* libsfml-window.2.5.1.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDB3922723BA6E0300F94B24 /* NEAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB3922F23BA6E0300F94B24 /* Build configuration list for PBXNativeTarget "NEAT" */;
+			buildPhases = (
+				DDB3922423BA6E0300F94B24 /* Sources */,
+				DDB3922523BA6E0300F94B24 /* Frameworks */,
+				DDB3922623BA6E0300F94B24 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEAT;
+			productName = NEAT;
+			productReference = DDB3922823BA6E0300F94B24 /* NEAT */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDB3922023BA6E0300F94B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = mlvl;
+				TargetAttributes = {
+					DDB3922723BA6E0300F94B24 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = DDB3922323BA6E0300F94B24 /* Build configuration list for PBXProject "NEAT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDB3921F23BA6E0300F94B24;
+			productRefGroup = DDB3922923BA6E0300F94B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDB3922723BA6E0300F94B24 /* NEAT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDB3922423BA6E0300F94B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB3922C23BA6E0300F94B24 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DDB3922D23BA6E0300F94B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DDB3922E23BA6E0300F94B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DDB3923023BA6E0300F94B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SFML/include";
+				LIBRARY_SEARCH_PATHS = (
+					"${SRCROOT}/SFML/lib",
+					"$(PROJECT_DIR)/SFML/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDB3923123BA6E0300F94B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SFML/include";
+				LIBRARY_SEARCH_PATHS = (
+					"${SRCROOT}/SFML/lib",
+					"$(PROJECT_DIR)/SFML/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDB3922323BA6E0300F94B24 /* Build configuration list for PBXProject "NEAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB3922D23BA6E0300F94B24 /* Debug */,
+				DDB3922E23BA6E0300F94B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB3922F23BA6E0300F94B24 /* Build configuration list for PBXNativeTarget "NEAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB3923023BA6E0300F94B24 /* Debug */,
+				DDB3923123BA6E0300F94B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDB3922023BA6E0300F94B24 /* Project object */;
+}
