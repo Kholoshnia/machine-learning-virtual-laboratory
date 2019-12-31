@@ -28,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DDA8EAF823BB68C9005FCA94 /* Source Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Source Files"; sourceTree = "<group>"; };
+		DDA8EAF923BB68C9005FCA94 /* Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		DDA8EAFA23BB68C9005FCA94 /* Header Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Header Files"; sourceTree = "<group>"; };
 		DDB3922823BA6E0300F94B24 /* NEAT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NEAT; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB3922B23BA6E0300F94B24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DDB3923323BA6E8600F94B24 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -73,6 +76,9 @@
 		DDB3922A23BA6E0300F94B24 /* NEAT */ = {
 			isa = PBXGroup;
 			children = (
+				DDA8EAF923BB68C9005FCA94 /* Enums.h */,
+				DDA8EAFA23BB68C9005FCA94 /* Header Files */,
+				DDA8EAF823BB68C9005FCA94 /* Source Files */,
 				DDB3922B23BA6E0300F94B24 /* main.cpp */,
 			);
 			path = NEAT;
@@ -266,8 +272,13 @@
 		DDB3923023BA6E0300F94B24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/SFML/include";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/SFML/include",
+					"${SRCROOT}/NEAT",
+					"${SRCROOT}/NEAT/Header\\ Files",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"${SRCROOT}/SFML/lib",
 					"$(PROJECT_DIR)/SFML/lib",
@@ -279,8 +290,13 @@
 		DDB3923123BA6E0300F94B24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/SFML/include";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/SFML/include",
+					"${SRCROOT}/NEAT",
+					"${SRCROOT}/NEAT/Header\\ Files",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"${SRCROOT}/SFML/lib",
 					"$(PROJECT_DIR)/SFML/lib",
