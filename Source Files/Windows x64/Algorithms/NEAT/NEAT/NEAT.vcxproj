@@ -154,7 +154,6 @@
     <ClCompile Include="Source Files\Agent.cpp" />
     <ClCompile Include="Source Files\Brain.cpp" />
     <ClCompile Include="Source Files\Layers.cpp" />
-    <ClCompile Include="Source Files\Logic.cpp" />
     <ClCompile Include="Source Files\Map.cpp" />
     <ClCompile Include="Source Files\Population.cpp" />
   </ItemGroup>
@@ -163,7 +162,6 @@
     <ClInclude Include="Header Files\Agent.h" />
     <ClInclude Include="Header Files\Brain.h" />
     <ClInclude Include="Header Files\Layers.h" />
-    <ClInclude Include="Header Files\Logic.h" />
     <ClInclude Include="Header Files\Map.h" />
     <ClInclude Include="Header Files\Population.h" />
   </ItemGroup>

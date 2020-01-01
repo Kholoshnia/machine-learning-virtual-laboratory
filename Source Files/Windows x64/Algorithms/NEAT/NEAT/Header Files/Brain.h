@@ -3,6 +3,7 @@
 #define _USE_MATH_DEFINES
 
 #include <SFML/Graphics.hpp>
+
 #include <vector>
 
 extern float mutation_rate;
@@ -12,7 +13,6 @@ class Brain
 {
 public:
 	unsigned int step;
-	float mutation_rate;
 	std::vector<sf::Vector2f> directions;
 
 	Brain();

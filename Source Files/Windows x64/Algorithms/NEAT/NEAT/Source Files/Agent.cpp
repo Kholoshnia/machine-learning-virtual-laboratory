@@ -1,7 +1,7 @@
 #include "Agent.h"
 
 Agent::Agent() : fitness(0.0f), dead(false), is_best(false), reached_goal(false),
-	pos(map->pos_agent), vel(0.0f, 0.0f), acc(0.0f, 0.0f), brain()
+	pos(map->pos_agent), vel(0.0f, 0.0f), acc(0.0f, 0.0f)
 {
 	circle.setFillColor(sf::Color::Black);
 	circle.setRadius(radius_agent);

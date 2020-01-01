@@ -1,17 +1,19 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include <functional>
-#include <sstream>
+
 #include <vector>
 #include <thread>
+#include <sstream>
+#include <functional>
 
 #include "Population.h"
 
 extern unsigned int layers_quantity;
 
-struct Layers
+class Layers
 {
+public:
 	int best_population;
 	std::vector<Population> populations;
 	std::vector<std::shared_ptr<sf::Thread>> threads;

@@ -1,6 +1,6 @@
 #include "Brain.h"
 
-Brain::Brain() : step(0), mutation_rate(mutation_rate)
+Brain::Brain() : step(0)
 {
 	directions.resize(directions_array_size);
 	randomize();
