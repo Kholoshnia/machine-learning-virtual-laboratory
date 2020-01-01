@@ -1,15 +1,16 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+
 #include <vector>
-#include <ctime>
 
 #include "Agent.h"
 
 extern unsigned int directions_array_size, population_quantity, layers_quantity;
 
-struct Population
+class Population
 {
+public:
 	sf::Color color;
 	float fitness_sum;
 	bool reached_the_goal;

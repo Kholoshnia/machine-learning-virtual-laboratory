@@ -2,8 +2,6 @@
 
 Map::Map()
 {
-	this->map_markup.resize(static_cast<unsigned int>(map_size.y));
-
 	pos_goal = sf::Vector2f(static_cast<float>(width / 2), static_cast<float>(height / 2));
 	pos_agent = sf::Vector2f(static_cast<float>(width / 2), static_cast<float>(height / 4));
 
@@ -22,8 +20,8 @@ Map::Map()
 
 void Map::from_file()
 {
-	for (unsigned int i = 0; i < map_size.y; i++)
-		for (unsigned int j = 0; j < map_size.x; j++)
+	for (int i = 0; i < map_size.y; i++)
+		for (int j = 0; j < map_size.x; j++)
 			if (map_markup[i][j] == 'W')
 				pos_rects.emplace_back(static_cast<float>(j * (width / map_size.x)), static_cast<float>(i * (height / map_size.y)));
 			else if (map_markup[i][j] == 'G')
