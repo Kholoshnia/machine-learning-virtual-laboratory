@@ -1,0 +1,56 @@
+number-of-objects:;11
+
+start
+position:;0;3;0
+rotation:;0;0;0;1
+localScale:;1;1;1
+
+goal
+position:;0;17;0
+rotation:;0;0;0;1
+localScale:;1;1;1
+
+wall (0)
+position:;0;0;0
+rotation:;0;0;0;1
+localScale:;20;0.1;20
+
+wall (1)
+position:;0;20;0
+rotation:;0;0;0;1
+localScale:;20;0.1;20
+
+wall (2)
+position:;0;10;-10
+rotation:;0;0;0;1
+localScale:;20;20;0.1
+
+wall (3)
+position:;0;10;10
+rotation:;0;0;0;1
+localScale:;20;20;0.1
+
+wall (4)
+position:;10;10;0
+rotation:;0;0;0;1
+localScale:;0.1;20;20
+
+wall (5)
+position:;-10;10;0
+rotation:;0;0;0;1
+localScale:;0.1;20;20
+
+wall (6)
+position:;0;10;0
+rotation:;0;0;0;1
+localScale:;5;0.1;5
+
+wall (7)
+position:;-5;5;0
+rotation:;0;0;0;1
+localScale:;10;0.1;20
+
+wall (8)
+position:;5;15;0
+rotation:;0;0;0;1
+localScale:;10;0.1;1
