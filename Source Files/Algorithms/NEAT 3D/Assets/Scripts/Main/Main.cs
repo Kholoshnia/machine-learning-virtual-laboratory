@@ -1,11 +1,13 @@
 ﻿using System;
 using System.IO;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Main : MonoBehaviour
 {
     private Modes mode;
+    private VisualizationType visualization;
 
     private string pathIn, pathOut, pathInfo;
 
@@ -18,7 +20,6 @@ public class Main : MonoBehaviour
 
     private int k;
     private bool showTextControls, pause;
-    private bool visualization;
     private float mutationRate, maxSpeed;
     private int directionArraySize, populationQuantity, layersQuantity, autoCompletion;
 
@@ -34,7 +35,7 @@ public class Main : MonoBehaviour
                 pathInfo = Application.dataPath.Remove(Application.dataPath.Length) + "/data/info.csv";
                 break;*/
             case RuntimePlatform.OSXEditor:
-                pathInfo = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT 3D/Data/info.csv";
+                pathInfo = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT 3D/Data/info-check.csv";
                 break;
             /*case RuntimePlatform.WindowsEditor:
                 pathInfo = Application.dataPath.Remove(Application.dataPath.Length) + "/data/info.csv";
@@ -61,15 +62,15 @@ public class Main : MonoBehaviour
             switch (mode)
             {
                 case Modes.LEARN:
-                    pathIn = reader.ReadLine();
-                    pathOut = reader.ReadLine();
+                    pathIn = reader.ReadLine().Split(';')[1];
+                    pathOut = reader.ReadLine().Split(';')[1];
                     switch (reader.ReadLine().Split(';')[1])
                     {
                         case "WITH":
-                            visualization = true;
+                            visualization = VisualizationType.WITH;
                             break;
                         case "WITHOUT":
-                            visualization = false;
+                            visualization = VisualizationType.WITHOUT;
                             break;
                     }
                     directionArraySize = Convert.ToInt32(reader.ReadLine().Split(';')[1]);
@@ -80,10 +81,10 @@ public class Main : MonoBehaviour
                     mutationRate = Convert.ToSingle(reader.ReadLine().Split(';')[1]);
                     break;
                 case Modes.CHECK:
-                    pathIn = reader.ReadLine();
-                    pathOut = reader.ReadLine();
+                    pathIn = reader.ReadLine().Split(';')[1];
+                    pathOut = reader.ReadLine().Split(';')[1];
                     break;
-            }            
+            }
         }
         fin.Close();
 
@@ -139,7 +140,7 @@ public class Main : MonoBehaviour
 
             GameObject.FindWithTag("TextControls").GetComponent<Text>().text = "[H] - Show controls";
 
-            if (!visualization)
+            if (visualization == VisualizationType.WITHOUT)
             {
                 Destroy(GameObject.FindWithTag("Walls"));
                 GameObject.FindWithTag("MainCamera").GetComponent<CameraMovement>().enabled = false;
@@ -161,30 +162,24 @@ public class Main : MonoBehaviour
             pos = GameObject.FindWithTag("Start").transform.position;
             vel = Vector3.zero;
 
-            FileStream fin2 = new FileStream(pathOut, FileMode.Open);
+            fin = new FileStream(pathOut, FileMode.Open);
 
-            using (StreamReader reader = new StreamReader(fin2))
+            using (StreamReader reader = new StreamReader(fin))
             {
-                var values = reader.ReadLine().Split(';');
-                maxSpeed = Convert.ToInt32(values[1]);
-                values = reader.ReadLine().Split(';');
-                way = new GameObject[Convert.ToInt32(values[1])];
+                maxSpeed = Convert.ToInt32(reader.ReadLine().Split(';')[1]);
+                way = new GameObject[Convert.ToInt32(reader.ReadLine().Split(';')[1])];
                 acc = new Vector3[way.Length];
                 for (int i = 0; i < way.Length; i++)
                 {
                     way[i] = Instantiate(GameObject.FindWithTag("Start"));
 
-                    values = reader.ReadLine().Replace('.', ',').Split(';');
+                    var values = reader.ReadLine().Split(';');
                     acc[i] = new Vector3(Convert.ToSingle(values[0]), Convert.ToSingle(values[1]), Convert.ToSingle(values[2]));
                 }
             }
 
             populationQuantity = 1;
             layers = new Layers(directionArraySize, populationQuantity, layersQuantity, mutationRate, maxSpeed);
-            Destroy(GameObject.FindWithTag("TextReachedTheGoal"));
-            Destroy(GameObject.FindWithTag("ImageReachedTheGoal"));
-            Destroy(GameObject.FindWithTag("TextGen"));
-            Destroy(GameObject.FindWithTag("ImageGen"));
             GameObject.FindWithTag("TextControls").GetComponent<RectTransform>().transform.localPosition = new Vector3(-205.35f, 230.3f, 0.0f);
         }
 

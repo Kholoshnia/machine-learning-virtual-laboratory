@@ -13,7 +13,7 @@
 extern std::shared_ptr<Map> map;
 extern std::shared_ptr<Agent> agent;
 
-extern float gamma;
+extern float gamma_parameter;
 extern long long int goal_reward;
 extern unsigned int iterations, goal_state;
 

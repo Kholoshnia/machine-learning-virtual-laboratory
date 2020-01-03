@@ -63,7 +63,7 @@ void Table::choose_an_action()
 
 	if (R[state][possible_action] >= 0)
 	{
-		Q[state][possible_action] = R[state][possible_action] + static_cast<long long>(gamma * maximum(possible_action, false));
+		Q[state][possible_action] = R[state][possible_action] + static_cast<long long>(gamma_parameter * maximum(possible_action, false));
 		state = possible_action;
 	}
 
@@ -102,13 +102,14 @@ long long Table::maximum(int now_state, bool return_index)
 
 int Table::get_random_action(int lower_bound, int upper_bound)
 {
-	int act;
+	int act = 0, k = 0;
 	bool choice_is_valid = false;
 
 	do
 	{
-		act = lower_bound + (((upper_bound - lower_bound) + 1) * static_cast<int>(rand()) / (static_cast<int>(RAND_MAX) + 1));
+        act = rand() % (lower_bound + upper_bound) - lower_bound;
 		if (R[state][act] > -1) choice_is_valid = true;
+        if (++k > map_size.x * map_size.y) break;
 	} while (choice_is_valid == false);
 
 	return act;

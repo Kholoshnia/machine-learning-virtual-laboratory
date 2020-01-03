@@ -1,0 +1,10 @@
+mode:;LEARN
+path-input:;/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT 3D/Data/input.csv
+path-output:;/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT 3D/Data/output.csv
+visualization:;WITH
+direction-array-size:;400
+population-quantity:;250
+layers-quantity:;5
+auto-completion:;100
+max-speed:;5
+mutation-rate:;0.01

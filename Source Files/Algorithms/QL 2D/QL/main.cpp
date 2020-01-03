@@ -14,6 +14,7 @@
 
 #include <SFML/Graphics.hpp>
 
+#include <cmath>
 #include <memory>
 #include <vector>
 #include <fstream>
@@ -48,7 +49,7 @@ std::vector<std::vector<long long int>> temp_Q;
 std::vector<unsigned int> initials;
 sf::Text text[4], controls[3];
 
-float gamma, thickness;
+float gamma_parameter, thickness;
 long long int goal_reward;
 unsigned int goal_state, iterations, repetitions, width, height;
 bool from_image, check_from_file, map_loaded, result_loaded, output_path_set, pause, show_controls, goal_loaded, around;
@@ -67,9 +68,9 @@ void initialize_variables(void)
     loading_texture.loadFromFile("Resource Files/Textures/loading.png");
     icon.loadFromFile("icon.png");
 #elif __APPLE__
-    font.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL/Resource Files/Fonts/sans-serif.ttf");
-    loading_texture.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL/Resource Files/Textures/loading.png");
-    icon.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL/icon.png");
+    font.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Fonts/sans-serif.ttf");
+    loading_texture.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Textures/loading.png");
+    icon.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/icon.png");
 #endif
 
 	loading.setOrigin(100, 25);
@@ -90,7 +91,7 @@ void initialize_variables(void)
 
 	visualization_type = VisualizationTypes::ITERATIONS;
 
-	gamma = 0.8f;
+	gamma_parameter = 0.8f;
 	repetitions = 5;
 	map_size.x = 10;
 	map_size.y = 10;
@@ -604,11 +605,11 @@ void without_visualization()
 void load_parameters_from_info_file()
 {
 #ifdef _WIN64
-    path_info = "Resource Files/Data/info-check.csv";
+    path_info = "Resource Files/Data/info-learn.csv";
 #elif _WIN32
     path_info = "Resource Files/Data/info-learn.csv";
 #elif __APPLE__
-    path_info = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL/Resource Files/Data/info-learn.csv";
+    path_info = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Data/info-check.csv";
 #endif
     
 	f_in.open(path_info);
@@ -641,7 +642,7 @@ void load_parameters_from_info_file()
 
 			std::getline(f_in, str_input, ';');
 			std::getline(f_in, str_input);
-			gamma = std::stof(str_input);
+			gamma_parameter = std::stof(str_input);
 
 			std::getline(f_in, str_input, ';');
 			std::getline(f_in, str_input);

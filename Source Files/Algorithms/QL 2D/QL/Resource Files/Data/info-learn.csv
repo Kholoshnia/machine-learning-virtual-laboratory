@@ -1,6 +1,6 @@
 mode:;LEARN
-path-input:;Resource Files/Data/input.csv
-path-output:;Resource Files/Data/output.csv
+path-input:;/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Data/input.csv
+path-output:;/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Data/output.csv
 visualization:;ITERATIONS
 gamma:;0.8
 iterations:;0
