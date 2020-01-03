@@ -37,7 +37,7 @@ public class Main : MonoBehaviour
                 pathInfo = Application.dataPath.Remove(Application.dataPath.Length) + "/data/info.csv";
                 break;*/
             case RuntimePlatform.OSXEditor:
-                pathInfo = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 3D/Data/info-learn.csv";
+                pathInfo = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL 3D/Data/info-learn.csv";
                 break;
             /*case RuntimePlatform.WindowsEditor:
                 pathInfo = Application.dataPath.Remove(Application.dataPath.Length) + "/data/info.csv";
@@ -86,7 +86,7 @@ public class Main : MonoBehaviour
                     pathIn = reader.ReadLine().Split(';')[1];
                     pathOut = reader.ReadLine().Split(';')[1];
                     break;
-            }            
+            }
         }
         fin.Close();
 

@@ -68,9 +68,9 @@ void initialize_variables(void)
     loading_texture.loadFromFile("Resource Files/Textures/loading.png");
     icon.loadFromFile("icon.png");
 #elif __APPLE__
-    font.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Fonts/sans-serif.ttf");
-    loading_texture.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Textures/loading.png");
-    icon.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/icon.png");
+    font.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL 2D/QL/Resource Files/Fonts/sans-serif.ttf");
+    loading_texture.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL 2D/QL/Resource Files/Textures/loading.png");
+    icon.loadFromFile("/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL 2D/QL/icon.png");
 #endif
 
 	loading.setOrigin(100, 25);
@@ -609,7 +609,7 @@ void load_parameters_from_info_file()
 #elif _WIN32
     path_info = "Resource Files/Data/info-learn.csv";
 #elif __APPLE__
-    path_info = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL 2D/QL/Resource Files/Data/info-check.csv";
+    path_info = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/QL/QL 2D/QL/Resource Files/Data/info-create.csv";
 #endif
     
 	f_in.open(path_info);

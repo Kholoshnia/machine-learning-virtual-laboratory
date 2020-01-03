@@ -35,7 +35,7 @@ public class Main : MonoBehaviour
                 pathInfo = Application.dataPath.Remove(Application.dataPath.Length) + "/data/info.csv";
                 break;*/
             case RuntimePlatform.OSXEditor:
-                pathInfo = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT 3D/Data/info-check.csv";
+                pathInfo = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT/NEAT 3D/Data/info-check.csv";
                 break;
             /*case RuntimePlatform.WindowsEditor:
                 pathInfo = Application.dataPath.Remove(Application.dataPath.Length) + "/data/info.csv";
