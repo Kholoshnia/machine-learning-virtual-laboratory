@@ -452,9 +452,6 @@ healthchecksdb
 MigrationBackup/
 
 ### Xcode ###
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
 xcuserdata/
@@ -477,7 +474,7 @@ DerivedData/
 !default.perspectivev3
 
 ## Xcode Patch
-*.xcodeproj/*
+!*.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
