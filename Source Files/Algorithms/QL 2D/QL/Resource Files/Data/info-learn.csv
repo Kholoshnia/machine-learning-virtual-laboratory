@@ -1,0 +1,7 @@
+mode:;LEARN
+path-input:;Resource Files/Data/input.csv
+path-output:;Resource Files/Data/output.csv
+visualization:;ITERATIONS
+gamma:;0.8
+iterations:;0
+repetitions:;1

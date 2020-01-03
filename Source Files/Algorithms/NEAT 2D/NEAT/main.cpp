@@ -24,6 +24,7 @@
 #include "Layers.h"
 #include "Population.h"
 
+#pragma region Variables
 Modes mode;
 VisualizationTypes visualization_type;
 
@@ -49,7 +50,9 @@ sf::Vector2i map_size, wall_size, pos_agent, pos_goal;
 float radius_agent, radius_goal, max_speed, mutation_rate;
 unsigned int width, height, directions_array_size, population_quantity, layers_quantity, auto_completion;
 bool from_image, check_from_file, map_loaded, result_loaded, output_path_set, pause, show_controls, around, map_changed;
+#pragma endregion
 
+#pragma region Functions
 void initialize_variables(void)
 {
 
@@ -604,9 +607,9 @@ void load_parameters_from_info_file()
 {
 
 #ifdef _WIN64
-    path_info = "C:\\Users\\vhd-r\\Documents\\GitHub\\mlvl\\Source Files\\Windows x64\\Algorithms\\NEAT\\NEAT\\Resource Files\\Data\\info-learn.csv";
+    path_info = "Resource Files/Data/info-learn.csv";
 #elif _WIN32
-    path_info = "C:\\Users\\vhd-r\\Documents\\GitHub\\mlvl\\Source Files\\Windows x64\\Algorithms\\NEAT\\NEAT\\Resource Files\\Data\\info-learn.csv";
+    path_info = "Resource Files/Data/info-learn.csv";
 #elif __APPLE__
     path_info = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT/NEAT/Resource Files/Data/info-learn.csv";
 #endif
@@ -679,6 +682,7 @@ void load_parameters_from_info_file()
 		exit(0);
 	}
 }
+#pragma endregion
 
 int main()
 {
@@ -691,7 +695,10 @@ int main()
 	{
 		load_map_from_file();
 		if (map_loaded)
-			with_visualization();
+			if (visualization_type == VisualizationTypes::WITH)
+				with_visualization();
+			else if (visualization_type == VisualizationTypes::WITHOUT)
+				without_visualization();
 	}
 	else if (mode == Modes::CHECK)
 	{
