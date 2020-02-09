@@ -611,7 +611,7 @@ void load_parameters_from_info_file()
 #elif _WIN32
     path_info = "Resource Files/Data/info-learn.csv";
 #elif __APPLE__
-    path_info = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT/NEAT 2D/NEAT/Resource Files/Data/info-learn.csv";
+    path_info = "/Users/vadim/Documents/GitHub/mlvl/Source Files/Algorithms/NEAT/NEAT 2D/NEAT/Resource Files/Data/info-create.csv";
 #endif
     
 	f_in.open(path_info);
